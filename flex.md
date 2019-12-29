@@ -67,3 +67,24 @@ flex-direction: row;
 교차 축(cross-axis)의 정렬 방법 지정
 
 :exclamation: `flex-wrap`을 통해 **items가 여러 줄(2줄 이상)**일 경우 많이 사용
+
+`stretch`(default), `flex-start`, `flex-end`, `center`, `space-between`, `space-around`
+
+### :banana: align-items
+
+교차 축(cross-axis)의 정렬 방법 지정
+
+:exclamation: **items가 1줄**일 경우 많이 사용
+
+> `align-content` 속성을 기본 값(`stretch`)으로 설정해야 한다.
+
+### :banana: flex-items
+
+| 속성        | 의미                                                 | 기본값 |
+| ----------- | ---------------------------------------------------- | ------ |
+| order       | Flex Item의 순서를 결정                              |        |
+| flex        | `flex-grow`, `flex-shrink`, `flex-basis`의 단축 속성 |        |
+| flex-grow   | Flex Item의 **증가 너비 비율**을 설정                | 0      |
+| flex-shrink | Flex Item의 **감소 너비 비율**을 설정                | 1      |
+| flex-basis  | Flex Item의 (공간 배분 전) 기본 너비 설정            | auto   |
+| align-self  | 교차 축(cross-axis)에서 Item의 정렬 방법을 설정      |        |

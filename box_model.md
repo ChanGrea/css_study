@@ -129,3 +129,97 @@ margin: 20px;
 
 ## Border 속성
 
+### border-style
+
+border-style은 **테두리의 종류**를 결정한다. 아래와 같은 값이 있다.
+
+- border-style: dotted;
+- border-style: dashed;
+- border-style: solid;
+- border-style: double;
+- border-style: groove;
+- border-style: ridge;
+- border-style: inset;
+- border-style: outset;
+- border-style: none;
+- border-style: hidden;
+
+<img src="./img/border-style.png" />
+
+
+
+> :exclamation: border-style도 top, right. bottom, left  각각 설정이 가능하다.
+
+
+
+### border-width
+
+**테두리의 두계**를 결정
+
+- border-width: thin;
+  - 1px와 같다.
+- border-width: medium;
+  - 3px와 같다.
+- border-width: thick;
+  - 5px와 같다.
+- border-width: 15px;
+- border-wdith: 5px 10px 20px 10px;
+
+
+
+### border-color
+
+**테두리의 색상**을 결정
+
+```css
+border-color: red;
+border-color: #121212;
+```
+
+
+
+### border-radius
+
+**테두리 모서리를 둥글게** 하는 속성
+
+<img src="./img/border-radius.png" />
+
+- 기본적으로 border-radius에 px, em, %를 지정하면 모든 모서리에 적용된다.
+
+
+
+#### :heavy_check_mark: border-radius shorthand
+
+```css
+border-radius: top-left top-right bottom-right bottom-left
+```
+
+- border-radius의 세부 속성은 위와 같이 조절이 가능하다.
+- 아래와 같이 각각 항목에 대해 값 지정도 가능하다.
+
+```css
+border-top-left-radius:     10px;
+border-top-right-radius:    40px;
+border-bottom-right-radius: 40px;
+border-bottom-left-radius:  10px;
+
+// 아래와 같이 x, y의 크기로 또 나눌 수 있다.
+border-top-left-radius:			5px 20px; // x y
+```
+
+
+
+### border
+
+마지막으로 border 속성에 `border-style`, `border-width`, `border-color` 세 가지를 축약해서 쓸 수 있다.
+
+```css
+border: 1px black solid;	// border-width border-color border-style
+```
+
+
+
+아래는 border-style과 border-radius에 대한 [demo 파일](https://github.com/ChanGrea/css_study/box_model.html)이다.
+
+<iframe style="height: 700px;" src="./box_model.html" />
+

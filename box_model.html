@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>box_model</title>
+    <style>
+        .border-style {
+            margin: auto;
+            background-color: bisque;
+            width: 400px;
+            height: 20px;
+        }
+        
+        .border-style + .border-style {
+            margin-top: 10px;
+        }
+
+        .border-radius-wrapper {
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            display: inline;
+            border: 1px black solid;
+            padding: 10px;
+        }
+        .container + .container {
+            margin-left: 10px;
+        }
+        .border-radius {
+            margin: auto;
+            width: 100px;
+            height: 100px;
+            border: 3px black solid;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">border-style</h2>
+    <div class="border-style" style="border-style: dotted;">border-style: dotted;</div>
+    <div class="border-style" style="border-style: dashed;">border-style: dashed;</div>
+    <div class="border-style" style="border-style: solid;">border-style: solid;</div>
+    <div class="border-style" style="border-style: double;">border-style: double;</div>
+    <div class="border-style" style="border-style: groove;">border-style: groove;</div>
+    <div class="border-style" style="border-style: ridge;">border-style: ridge;</div>
+    <div class="border-style" style="border-style: inset;">border-style: inset;</div>
+    <div class="border-style" style="border-style: outset;">border-style: outset;</div>
+    <div class="border-style" style="border-style: none;">border-style: none;</div>
+    <div class="border-style" style="border-style: hidden;">border-style: hidden;</div>
+
+    <h2 style="text-align: center;">border-radius</h2>
+    <div class="border-radius-wrapper">
+        <div class="container">
+            <h3 style="text-align: center;">border-radius: 10px;</h3>
+            <div class="border-radius" style="border-radius: 10px;"></div>
+            <p>각 모서리에 10px 만큼 둥글게 한다.</p>
+        </div>
+        <div class="container">
+            <h3 style="text-align: center;">border-radius: 50%;</h3>
+            <div class="border-radius" style="border-radius: 50%;"></div>
+            <p>각 모서리를 50%만큼 둥글게 한다.</p>
+        </div>
+        <div class="container">
+            <h3 style="text-align: center;">border-radius: 15px 75px;</h3>
+            <div class="border-radius" style="border-radius: 15px 75px;"></div>
+            <p style="text-align: center;">왼쪽위/오른쪽아래(15px),<br>오른쪽위/왼쪽아래(75px)</p>
+        </div>
+    </div>
+</body>
+</html>

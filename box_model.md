@@ -219,7 +219,7 @@ border: 1px black solid;	// border-width border-color border-style
 
 
 
-아래는 border-style과 border-radius에 대한 [demo 파일](https://github.com/ChanGrea/css_study/box_model.html)이다.
+## Etc
 
-<iframe style="height: 700px;" src="./box_model.html" />
+border-style과 border-radius에 대한 [demo 파일](https://github.com/ChanGrea/css_study/blob/master/box_model.html)
 

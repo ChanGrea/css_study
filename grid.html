@@ -4,44 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <title>Grid</title>
     <style>
-      html,
-      body {
-        margin: 0;
-        padding: 0;
-        min-height: 100%;
-      }
       .container {
         display: grid;
-        height: 100%;
-        grid-template-rows: repeat(3, 100px);
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-areas:
-          "header header header"
-          "main main aside"
-          "footer footer footer";
-      }
-      .header {
-        grid-area: header;
-      }
-      .main {
-        grid-area: main;
-      }
-      .aside {
-        grid-area: aside;
-      }
-      .footer {
-        grid-area: footer;
+        grid-template-columns: 100px 100px 100px 100px;
+        grid-template-rows: 200px 100px;
+        justify-content: space-evenly;
+        height: 600px;
+        align-content: space-evenly;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="header">header</div>
-      <div class="main">main</div>
-      <div class="aside">aside</div>
-      <div class="footer">footer</div>
+      <div style="background-color: red;"></div>
+      <div style="background-color: orangered;"></div>
+      <div style="background-color: orange;"></div>
+      <div style="background-color: green;"></div>
+      <div style="background-color: blue;"></div>
+      <div style="background-color: blueviolet;"></div>
+      <div style="background-color: violet;"></div>
+      <div style="background-color: black;"></div>
     </div>
   </body>
 </html>

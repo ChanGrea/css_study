@@ -2,8 +2,6 @@
 
 ## Index
 
-
-
 ### Layout
 
 - [Position \- Relative vs Absolute vs Fixed](https://github.com/ChanGrea/css_study/blob/master/position.md)
@@ -11,17 +9,12 @@
 - [Floats](https://github.com/ChanGrea/css_study/blob/master/floats.md)
 - [Display](https://github.com/ChanGrea/css_study/blob/master/display.md)
 - [Box Model](https://github.com/ChanGrea/css_study/blob/master/box_model.md)
-- Grid (TBD)
-
-
+- [Grid](https://github.com/ChanGrea/css_study/blob/master/box_model.md)
 
 ### Responsive Design
 
 - Media Query (TBD)
 
-
-
 ### Animation
 
 - Animation (TBD)
-

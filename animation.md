@@ -181,3 +181,103 @@ div:hover {
 
 CSS Animation을 적용하려면 `animation` 속성과 `하위 속성`을 이용한다.
 
+
+
+### @keyframes Rule
+
+animation을 적용하기 전에 animation 규칙을 정의하는 것이 필요하다. 이 때 `keyframes`를 활용한다.
+
+#### 1. `from`, `to`
+
+keframes 안에 from과 to를 활용해서 시작과 끝을 정의할 수 있다.
+
+`from`은 **0%(start)** `to`는 **100%(end)**이다.
+
+```css
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+```
+
+<img src="./img/animation1.gif" />
+
+
+
+#### 2. `%` 활용
+
+%에 0~100 사이의 숫자를 지정함으로써 각 타이밍마다 적절한 property를 정의할 수 있다.
+
+```css
+@keyframes example {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+```
+
+<img src="./img/animation2.gif" />
+
+
+
+### animation 속성
+
+`animation`은 `하위 속성`을 축약해서 표현한다.
+
+문법은 아래와 같다.
+
+```
+animation: animation-name | animation-duration | animation-timing-function | animation-delay | animation-iteration-count | animation-direction | animation-fill-mode | animation-play-state.
+```
+
+- 이름 > 실행속도 > 속도곡선타입 > 딜레이시간 > 반복횟수 >  진행방향 > 끝난후위치 > 실행or정지
+
+
+
+`animation-name`
+
+- 애니메이션 **이름**
+- `keyframes`을 지정한다.
+
+
+
+`animation-duration`
+
+- **실행 속도**
+
+
+
+`animation-timing-function`
+
+- 애니메이션의 **진행 속도**를 정의
+
+
+
+`animation-delay`
+
+- 애니메이션의 **시작 딜레이** 
+
+
+
+`animation-iteration-count`
+
+- 애니메이션의 **반복 횟수**
+
+
+
+`animation-direction`
+
+- 애니메이션의 **진행 방향**
+
+
+
+`animation-fill-mode`
+
+- 애니메이션의 **끝난 후의 위치**
+
+
+
+`animation-play-state`
+
+- 애니메이션을 **실행할지 정지할지**를 결정
